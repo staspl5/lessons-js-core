@@ -172,7 +172,8 @@ header{
 
 .tableBody{
     height: 27.5rem;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .tableBody_row{

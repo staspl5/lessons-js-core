@@ -41,7 +41,7 @@
     border: none;
     margin-left: 0.25rem;
     margin-top: 0.4rem;
-    /*width: 15.25rem;*/width: 5.6875rem;
+    width: 5.6875rem;
     height: 1rem;
     background-color: var(--background-color-white);
 }
@@ -61,7 +61,7 @@
 
 .input_button_incorrect{
     border: none;
-    background-image: url(/icons/x-large.svg);
+    background-image: url(./icons/x-large.svg);
     height: 1rem;
     width: 1rem;
     background-color: var(--background-color-white);
@@ -69,7 +69,6 @@
     background-repeat: no-repeat;
     margin-left: 0.6rem;
     margin-top:0.5rem;
-    /*border: none;*/
     background-position: 0.15rem 0.2rem;
 }
 
@@ -85,14 +84,13 @@
 }
 
 .input_button_disabled{
-    background-image: url(/icons/locked.svg);
+    background-image: url(./icons/locked.svg);
     height: 1.5rem;
     width: 1.5rem;
     background-color: var(--background-color-day-light-blue);
     background-size: 1rem;
     background-repeat: no-repeat;
     margin-left: 0.3rem;
-
     border: none;
     background-position: 0.15rem 0.4rem;
 }

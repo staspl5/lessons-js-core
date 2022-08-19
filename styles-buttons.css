@@ -27,7 +27,7 @@
 }
 
 .button_icon button{
-    background-image: url(/icons/locked-white.svg);
+    background-image: url(./icons/locked-white.svg);
     background-size: 1rem 1rem;
     background-repeat: no-repeat;
     background-position: 1rem 0.5rem;
@@ -53,7 +53,7 @@
 }
 
 .button_icon-small button{
-    background-image: url(/icons/locked-white.svg);
+    background-image: url(./icons/locked-white.svg);
     background-size: 1rem 1rem;
     background-repeat: no-repeat;
     background-position: 0.5rem 0.5rem;
@@ -70,7 +70,7 @@
 }
 
 .button_low_icon button{
-    background-image: url(/icons/locked-white.svg);
+    background-image: url(./icons/locked-white.svg);
     background-size: 1rem 1rem;
     background-repeat: no-repeat;
     background-position: 0.5rem 0.25rem;
@@ -96,7 +96,7 @@
 }
 
 .button_icon-small-low button{
-    background-image: url(/icons/locked-white.svg);
+    background-image: url(./icons/locked-white.svg);
     background-size: 1rem 1rem;
     background-repeat: no-repeat;
     background-position: 0.25rem 0.25rem;
@@ -117,7 +117,7 @@
 }
 
 .button_icon-blue button{
-    background-image: url(/icons/locked-blue.svg);
+    background-image: url(./icons/locked-blue.svg);
 }
 
 .button_text-black button{
@@ -125,5 +125,5 @@
 }
 
 .button_icon-black button{
-    background-image: url(/icons/locked.svg);
+    background-image: url(./icons/locked.svg);
 }
