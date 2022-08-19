@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin-panel</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles-checkbox.css">
+        <link rel="stylesheet" href="styles-radio.css">
+        <link rel="stylesheet" href="styles-input.css">
+        <link rel="stylesheet" href="styles-searchbar.css">
+        <link rel="stylesheet" href="styles-buttons.css">
+        <link rel="stylesheet" href="styles-dropdowns.css">
+        <link rel="stylesheet" href="styles-pageheader.css">
+        <link rel="stylesheet" href="styles-admin-panel.css">
+        <link rel="stylesheet" href="styles-root.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="switcherShow switcherShow_header">
+                <p class="switcherShow_p">Список заказов</p>
+                <div class="button button_transparent button_sizing-big button_icon button_icon-blue switcherShow_button">
+                    <button>Светлая тема</button>  
+                </div>
+            </div>
+        </header>
+        <section class="panel">
+            <div class="upper-panel-area">
+                <div class="upper-panel">
+                    <div class="searchbar__input searchbar__input_empty upper-panel_searchbar">
+                        <input name="text" type="text" placeholder="Номер заказа или ФИО">
+                    </div>
+                    <div class="button button_primary button_sizing-big button_icon upper-panel_button">
+                        <button>Фильтры</button>  
+                    </div>
+                    <div class="button button_transparent button_sizing-average upper-panel_button-reset">
+                        <button>Сбросить фильтры</button>
+                    </div>
+                </div>
+                <div class="button button_transparent button_sizing-big button_icon button_icon-blue load_button">
+                    <button>Загрузка</button>  
+                </div>
+            </div>
+            <div class="filter-panel">
+                <div class="input_block filter-panel_input">
+                    <label class="input_label" for="text">Дата оформления</label>
+                    <div class="input input_incorrect">
+                        <div><span>с</span>
+                        <input name="text" type="text" value="20.01.2021">
+                        </div>
+                        <button class="input_button_incorrect">
+    
+                        </button>
+                    </div>    
+                </div>
+                <div class="input_block filter-panel_input">
+                    <label class="input_label" for="text"></label>
+                    <div class="input input_empty">
+                        <div><span>по</span>
+                        <input name="text" type="text" placeholder="dd.mm.dddd">
+                        </div>
+                        <button class="input_button_empty"></button>
+
+                    </div>
+                </div>
+                <div class="input_block filter-panel_input filter-panel_status">
+                    <label class="input_label" for="text">Статус заказа</label>
+                    <div class="input input_incorrect">
+                        <input name="text" type="text" value="Любой">
+                        <button class="input_button_incorrect filter-panel_button-icon">
+    
+                        </button>
+                    </div>    
+                </div>
+
+                <div class="input_block filter-panel_input">
+                    <label class="input_label" for="text">Сумма заказа</label>
+                    <div class="input input_incorrect">
+                        <div><span>от</span>
+                        <input name="text" type="text" value="5000">
+                        </div>
+                        <button class="input_button_incorrect">
+    
+                        </button>
+                    </div>    
+                </div>
+                <div class="input_block filter-panel_input">
+                    <label class="input_label" for="text"></label>
+                    <div class="input input_empty">
+                        <div><span>до</span>
+                        <input name="text" type="text" placeholder="₽">
+                        </div>
+                        <button class="input_button_empty"></button>
+
+                    </div>
+                </div>
+                <div class="button button_transparent button_sizing-average filter-panel_button">
+                    <button>Применить</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="tableHeader">
+                <div class="tableHeader_check">
+                    <div class="checkbox">
+                        <label>
+                            <input class="checkbox_input" type="checkbox">
+                            <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                </svg>
+                        </label>
+                    </div>
+                </div>
+                <div class="tableHeader_nomer">
+                    <span>#</span>
+                </div>
+                <div class="tableHeader_item tableHeader-checked">
+                    <span>Дата</span>
+                    <div class="button button_transparent button_sizing-small button_icon-small button_icon-blue tableHeader_item_button">
+                        <button></button>
+                    </div>
+                </div>
+                <div class="tableHeader_item">
+                    <span>Статус</span>
+                    <div class="button button_transparent button_sizing-small button_icon-small button_icon-blue tableHeader_item_button">
+                        <button></button>
+                    </div>
+                </div>
+                <div class="tableHeader_item tableHeader_item-positions">
+                    <span>Позиций</span>
+                    <div class="button button_transparent button_sizing-small button_icon-small button_icon-blue tableHeader_item_button">
+                        <button></button>
+                    </div>
+                </div>
+                <div class="tableHeader_item tableHeader_item-summ">
+                    <span>Сумма</span>
+                    <div class="button button_transparent button_sizing-small button_icon-small button_icon-blue tableHeader_item_button">
+                        <button></button>
+                    </div>
+                </div>
+                <div class="tableHeader_name">
+                    <span>ФИО Покупателя</span>
+                </div>
+            </div>
+            <div class="tableBody">
+                <div class="tableBody_row">
+                    <div class="tableBody_check">
+                        <div class="checkbox">
+                            <label>
+                                <input class="checkbox_input" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                    </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tableBody_item">
+                        <span>1270989</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-data">
+                        <span>15.02.2021, 18:00</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-status">
+                        <span>Новый</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-positions">
+                        <span>6</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-summ">
+                        <span>101 907 ₽</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-name">
+                        <span>Чернышев Филипп Семенович</span>
+                    </div>
+                </div>
+                <div class="tableBody_row">
+                    <div class="tableBody_check">
+                        <div class="checkbox">
+                            <label>
+                                <input class="checkbox_input" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                    </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tableBody_item">
+                        <span>235374</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-data">
+                        <span>12.03.2021, 05:15</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-status">
+                        <span>Новый</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-positions">
+                        <span>2</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-summ">
+                        <span>98 003 ₽</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-name">
+                        <span>Филиппов Степан Васильевич</span>
+                    </div>
+                </div>
+                <div class="tableBody_row">
+                    <div class="tableBody_check">
+                        <div class="checkbox">
+                            <label>
+                                <input class="checkbox_input" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                    </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tableBody_item">
+                        <span>1103397</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-data">
+                        <span>03.02.2021, 08:04</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-status tableBody_item-status-calculation">
+                        <span>Рассчет</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-positions">
+                        <span>5</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-summ">
+                        <span>3 800 ₽</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-name">
+                        <span>Тихонова Алина Давидовна</span>
+                    </div>
+                </div>
+                <div class="tableBody_row">
+                    <div class="tableBody_check">
+                        <div class="checkbox">
+                            <label>
+                                <input class="checkbox_input" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                    </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tableBody_item">
+                        <span>6924662</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-data">
+                        <span>21.01.2021, 18:00</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-status tableBody_item-status-done">
+                        <span>Выполнен</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-positions">
+                        <span>1</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-summ">
+                        <span>5 700 ₽</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-name">
+                        <span>Александровна Юлия Никитична</span>
+                    </div>
+                </div>
+                <div class="tableBody_row">
+                    <div class="tableBody_check">
+                        <div class="checkbox">
+                            <label>
+                                <input class="checkbox_input" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                    </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tableBody_item">
+                        <span>2200086</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-data">
+                        <span>19.01.2021, 10:28</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-status tableBody_item-status-cancelled">
+                        <span>Отменен</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-positions">
+                        <span>-</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-summ">
+                        <span>-</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-name">
+                        <span>Андрей</span>
+                    </div>
+                </div>
+                <div class="tableBody_row">
+                    <div class="tableBody_check">
+                        <div class="checkbox">
+                            <label>
+                                <input class="checkbox_input" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                    </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tableBody_item">
+                        <span>2842064</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-data">
+                        <span>04.01.2021, 12:12</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-status tableBody_item-status-postponed">
+                        <span>Отложен</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-positions">
+                        <span>1</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-summ">
+                        <span>20 500 ₽</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-name">
+                        <span>Судакова Анастасия Ильинична</span>
+                    </div>
+                </div>
+                <div class="tableBody_row">
+                    <div class="tableBody_check">
+                        <div class="checkbox">
+                            <label>
+                                <input class="checkbox_input" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                    </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tableBody_item">
+                        <span>1730071</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-data">
+                        <span>17.12.2020, 22:45</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-status tableBody_item-status-done">
+                        <span>Выполнен</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-positions">
+                        <span>1</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-summ">
+                        <span>1 399 ₽</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-name">
+                        <span>Зверева Арина Николаевна</span>
+                    </div>
+                </div>
+                <div class="tableBody_row">
+                    <div class="tableBody_check">
+                        <div class="checkbox">
+                            <label>
+                                <input class="checkbox_input" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                    </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tableBody_item">
+                        <span>7987376</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-data">
+                        <span>07.12.2020, 08:57</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-status tableBody_item-status-done">
+                        <span>Выполнен</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-positions">
+                        <span>3</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-summ">
+                        <span>117 810 ₽</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-name">
+                        <span>Карташов Максим Кириллович </span>
+                    </div>
+                </div>
+                <div class="tableBody_row">
+                    <div class="tableBody_check">
+                        <div class="checkbox">
+                            <label>
+                                <input class="checkbox_input" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                    </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tableBody_item">
+                        <span>1373265</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-data">
+                        <span>15.11.2020, 14:26</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-status">
+                        <span>Новый</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-positions">
+                        <span>1</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-summ">
+                        <span>17 008 ₽</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-name">
+                        <span>Васильев Вадим Данилович</span>
+                    </div>
+                </div>
+                <div class="tableBody_row">
+                    <div class="tableBody_check">
+                        <div class="checkbox">
+                            <label>
+                                <input class="checkbox_input" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                    </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tableBody_item">
+                        <span>1311100</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-data">
+                        <span>07.11.2020, 18:52</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-status tableBody_item-status-cancelled">
+                        <span>Отменен</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-positions">
+                        <span>-</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-summ">
+                        <span>-</span>
+                    </div>
+                    <div class="tableBody_item tableBody_item-name">
+                        <span>София</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tableFooter">
+                <div class="tableFooter_buttons">
+                    <span>Выбрано записей: 5</span>
+                    <div class="button button_primary button_sizing-low-big button_low_icon tableFooter_button-setStatus">
+                        <button>Изменить статус</button>  
+                    </div>
+                    <div class="button button_primary button_sizing-low-big button_low_icon tableFooter_button-dellete">
+                        <button>Удалить</button>  
+                    </div>
+                </div>
+                <div class="tableFooter_pages">
+                    <div class="button button_primary button_sizing-low-small ">
+                        <button>1</button>
+                    </div>
+                    <div class="button button_transparent button_sizing-low-small">
+                        <button>2</button>
+                    </div>
+                    <div class="button button_transparent button_sizing-low-small">
+                        <button>3</button>
+                    </div>
+                    <div class="button button_transparent button_sizing-low-small">
+                        <button>...</button>
+                    </div>
+                    <div class="button button_transparent button_sizing-low-small">
+                        <button>18</button>
+                    </div>
+                    <div class="button button_transparent button_sizing-low-small">
+                        <button class="tableFooter_pages_button">#</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </body>
+</html>

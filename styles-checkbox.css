@@ -1,0 +1,49 @@
+/*:root{
+    --background-color-white: #ffffff;
+    --color-day-light-blue: #BAD8F5;
+    --background-color-blue: #459DF5;
+}*/
+
+.checkbox{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.checkbox label{
+    box-sizing: border-box;
+    position: relative;
+}
+
+.checkbox_input{
+    box-sizing: border-box;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--background-color-white);
+    border: 0.0625rem solid var(--color-day-light-blue);
+    border-radius: 0.125rem;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+.checkbox_input:checked{
+    background-color: var(--color-day-light-blue);
+    border:none;
+}
+
+.checkbox_input:checked + .checkbox_icon {
+    opacity: 1;
+}
+
+.checkbox_icon{
+    opacity: 0;
+    fill: var(--background-color-white);
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    left: 0rem;
+    top: -0.1rem;
+    transition: opacity 0.25s ease-in;
+}

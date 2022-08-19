@@ -1,0 +1,113 @@
+:root{
+    --border-color: #8055FF;
+    --background-color: #e2dddd;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.inputs{
+    box-sizing: border-box;
+    width: 22rem;
+    height: 22.5rem;
+    border: 1px dashed var(--border-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+}
+
+.searchbars{
+    box-sizing: border-box;
+    width: 22rem;
+    height: 12rem;
+    border: 1px dashed var(--border-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+    
+
+}
+.buttons{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 576px;
+    height: 376px;
+    border: 1px dashed var(--border-color);
+    border-radius: 5px;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+.buttons_container-main{
+    display: flex;  
+    gap: 3rem;
+}
+
+.buttons_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.checkboxs{
+    padding: 1.5rem;
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: 4rem;
+    border: 1px dashed var(--border-color);
+    border-radius: 0.3125rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.radios{
+    padding: 1.5rem;
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: 4rem;
+    border: 1px dashed var(--border-color);
+    border-radius: 0.3125rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdowns_container{
+    display: flex;
+    gap: 3rem;
+}
+
+.dropdowns{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    width: 42rem;
+    height: 32rem;
+    border: 0.0625rem dashed var(--border-color);
+    border-radius: 0.3125rem;
+    padding-left: 3rem;
+    padding-top: 3rem;
+
+}
+
+.pageheader{
+    box-sizing: border-box;
+    width: 49.125rem;
+    height: 13rem;
+    border: 0.0625rem dashed var(--border-color);
+    border-radius: 0.3125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    gap: 3rem;
+}

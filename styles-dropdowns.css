@@ -1,0 +1,176 @@
+/*:root{
+    --background-color-white: #ffffff;
+    --color-blue: #459DF5;
+}*/
+
+.dropdown_item_multiply{
+    box-sizing: border-box;
+    width: 10rem;
+    height: 2rem;
+    padding-left: 1rem;
+    padding-top: 0.25rem;
+
+}
+.dropdown_item_multiply label{
+    font-family: 'Ubuntu' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+
+}
+
+.dropdown_input_multiply{
+    margin-left: 0;
+    margin-bottom: -0.2rem;
+}
+
+.dropdown_multiply{
+    width: 10rem;
+    height: 13rem;
+    background: var(--background-color-white);
+    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.1), 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0rem 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding-top: 1rem;
+}
+
+.dropdown_input_single{
+    display:none;
+
+}
+
+.dropdown_input_multiply:checked ~ span {
+    color: var(--color-blue);
+}
+
+.action-go-page{
+    box-sizing: border-box;
+    width: 10rem;
+    height: 5.5rem;
+    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.1), 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0rem 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: var(--background-color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    font-family: 'Ubuntu' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    text-align: left;
+}
+
+.action-go-page input{
+    box-sizing: border-box;
+    appearance: none;
+    width: 8rem;
+    height: 2rem;
+    background: var(--background-color-white);
+    border: 0.0625rem solid var(--color-blue);
+    border-radius: 0.25rem;
+    padding-left: 0.5rem;
+}
+
+.action-delete{
+    box-sizing: border-box;
+    background: var(--background-color-white);
+    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.1), 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0rem 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 7rem;
+    font-family: 'Ubuntu' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    gap: 0.5rem;
+}
+
+.action-delete p{
+    margin: 0;
+}
+
+.action-delete_button-del{
+    appearance: none;
+    border: none;
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--background-color-white);
+    color: var(--color-blue);
+}
+
+.action-delete_button-reset{
+    appearance: none;
+    border: none;
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--color-blue);
+    color: var(--background-color-white);
+}
+
+.switcher{
+    box-sizing: border-box;
+    background: var(--background-color-white);
+    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.1), 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0rem 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 7rem;
+    font-family: 'Ubuntu' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    gap: 0.5rem;
+}
+
+.switcher p{
+    margin: 0;
+}
+
+.switcher_button-day{
+    box-sizing: border-box;
+    border: none;
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--background-color-white);
+    color: var(--color-blue);
+    background-image: url(./icons/sun.svg);
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    background-position: 1.6rem 0.15rem;
+    padding-left: 2.1rem;
+}
+
+.switcher_button-night{
+    border: none;
+    box-sizing: border-box;
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--color-blue);
+    color: var(--background-color-white);
+    background-image: url(./icons/moon-white.svg);
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    background-position: 1.6rem 0.15rem;
+    padding-left: 2.1rem;
+}
+
+
+
+

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Components</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles-checkbox.css">
+        <link rel="stylesheet" href="styles-radio.css">
+        <link rel="stylesheet" href="styles-input.css">
+        <link rel="stylesheet" href="styles-searchbar.css">
+        <link rel="stylesheet" href="styles-buttons.css">
+        <link rel="stylesheet" href="styles-dropdowns.css">
+        <link rel="stylesheet" href="styles-pageheader.css">
+        <link rel="stylesheet" href="styles-root.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="inputs">
+            <div class="input_block">
+                <label class="input_label" for="text">Дата и время заказа</label>
+                <div class="input input_empty">
+                    <input name="text" type="text" placeholder="Введите">
+                    <button class="input_button_empty"></button>
+                </div>
+            </div>
+            <div class="input_block">
+                <label class="input_label" for="text">Дата и время заказа</label>
+                <div class="input input_incorrect">
+                    <input name="text" type="text" value="06.12.2021">
+                    <button class="input_button_incorrect">
+
+                    </button>
+                </div>    
+            </div>
+            <div class="input_block">
+                <label class="input_label" for="text">Дата и время заказа</label>
+                <div class="input input_disabled">
+                    <input name="text" type="text" value="06.12.2021"> 
+                    <button class="input_button_disabled">
+
+                    </button>
+                </div>          
+            </div>
+        </div>
+        <div class="searchbars">
+            <div class="searchbar__input searchbar__input_empty">
+                <input name="text" type="text" placeholder="Номер заказа или ФИО">
+            </div>
+            <div class="searchbar__input searchbar__input_incorrect">
+                <input  name="text" type="text" value="50744">
+                <button></button>
+            </div>           
+        </div>
+        <div class="checkboxs">
+            <div class="checkbox">
+                <label>
+                    <input class="checkbox_input" type="checkbox">
+                    <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                        </svg>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input class="checkbox_input" type="checkbox" checked>
+                    <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                        </svg>
+                    
+                </label>
+            </div>
+        </div>
+        <div class="radios">
+            <div class="radio">
+                <label class="radio_label">
+                    <input class="radio_input" type="radio" >
+                    <svg class="radio_icon"viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="4" stroke="none"/>
+                        </svg>
+                </label>
+            </div>
+            <div class="radio">
+                <label class="radio_label">
+                    <input class="radio_input" type="radio" checked>
+                    <svg class="radio_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="4" stroke="none"/>
+                        </svg>
+                </label>
+            </div>
+        </div>
+        <div class="buttons">
+        <div class="buttons_container-main">
+            <div class="buttons_container">
+                <div class="button button_primary button_sizing-big button_icon">
+                    <button>Text here</button>  
+                </div>
+                <div class="button button_primary button_sizing-average">
+                    <button>Text here</button>
+                </div>
+                <div class="button button_primary button_sizing-small button_icon-small">
+                    <button></button>
+                </div>
+            </div>
+            <div class="buttons_container">
+                <div class="button button_transparent button_sizing-big button_icon button_icon-blue">
+                    <button>Text here</button>  
+                </div>
+                <div class="button button_transparent button_sizing-average">
+                    <button>Text here</button>
+                </div>
+                <div class="button button_transparent button_sizing-small button_icon-small button_icon-blue">
+                    <button></button>
+                </div>
+            </div>
+            <div class="buttons_container">
+                <div class="button button_transparent button_text-black button_sizing-big button_icon button_icon-black">
+                    <button>Text here</button>  
+                </div>
+                <div class="button button_transparent button_text-black button_sizing-average">
+                    <button>Text here</button>
+                </div>
+                <div class="button button_transparent button_sizing-small button_icon-small button_icon-black">
+                    <button></button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons_container-main">
+            <div class="buttons_container">
+                <div class="button button_primary button_sizing-low-big button_low_icon">
+                    <button>Text here</button>  
+                </div>
+                <div class="button button_primary button_sizing-low-average">
+                    <button>Text here</button>
+                </div>
+                <div class="button button_primary button_sizing-low-small button_icon-small-low">
+                    <button></button>
+                </div>
+            </div>
+            <div class="buttons_container">
+                <div class="button button_transparent button_sizing-low-big button_low_icon button_icon-blue">
+                    <button>Text here</button>  
+                </div>
+                <div class="button button_transparent button_sizing-low-average">
+                    <button>Text here</button>
+                </div>
+                <div class="button button_transparent button_sizing-low-small button_icon-small-low button_icon-blue">
+                    <button></button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="dropdowns">
+            <div class="dropdowns_container">
+                <div class="dropdown dropdown_multiply">
+                    <div class="checkbox dropdown_item_multiply">
+                            <label>
+                                <input class="checkbox_input dropdown_input_multiply" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                </svg> 
+                                <span>Новый</span></label> 
+                                                        
+                    </div>
+                    <div class="checkbox dropdown_item_multiply">
+                        <label>
+                            <input class="checkbox_input dropdown_input_multiply" type="checkbox">
+                            <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                            </svg> 
+                            <span>Рассчет</span></label>                         
+                    </div>
+                    <div class="checkbox dropdown_item_multiply">
+                        <label>
+                            <input class="checkbox_input dropdown_input_multiply" type="checkbox" checked>
+                            <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                            </svg> 
+                            <span>Подтвержден</span></label>                         
+                    </div>
+                    <div class="checkbox dropdown_item_multiply">
+                        <label>
+                            <input class="checkbox_input dropdown_input_multiply" type="checkbox">
+                            <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                            </svg> 
+                            <span>Отложен</span></label>                         
+                    </div>
+                    <div class="checkbox dropdown_item_multiply">
+                        <label>
+                            <input class="checkbox_input dropdown_input_multiply" type="checkbox">
+                            <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                            </svg> 
+                            <span>Выполнен</span></label>                         
+                    </div>
+                    <div class="checkbox dropdown_item_multiply">
+                        <label>
+                            <input class="checkbox_input dropdown_input_multiply" type="checkbox">
+                            <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                            </svg> 
+                            <span>Отменен</span></label>                         
+                    </div>
+                </div>
+
+                <div class="dropdown dropdown_multiply">
+                    <div class="checkbox dropdown_item_multiply">
+                            <label>
+                                <input class="dropdown_input_multiply dropdown_input_single" type="checkbox">
+                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                                </svg> 
+                                <span>Новый</span></label>                         
+                    </div>
+                    <div class="checkbox dropdown_item_multiply">
+                        <label>
+                            <input class="dropdown_input_multiply dropdown_input_single" type="checkbox">
+                            <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                            </svg> 
+                            <span>Рассчет</span></label>                         
+                    </div>
+                    <div class="checkbox dropdown_item_multiply">
+                        <label>
+                            <input class="dropdown_input_multiply dropdown_input_single" type="checkbox" checked>
+                            <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                            </svg> 
+                            <span>Подтвержден</span></label>                         
+                    </div>
+                    <div class="checkbox dropdown_item_multiply">
+                        <label>
+                            <input class="dropdown_input_multiply dropdown_input_single" type="checkbox">
+                            <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                            </svg> 
+                            <span>Отложен</span></label>                         
+                    </div>
+                    <div class="checkbox dropdown_item_multiply">
+                        <label>
+                            <input class="dropdown_input_multiply dropdown_input_single" type="checkbox">
+                            <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+                            </svg> 
+                            <span>Выполнен</span></label>                         
+                    </div>
+                    <div class="checkbox dropdown_item_multiply">
+                        <label class="test">
+                            <input class="dropdown_input_multiply dropdown_input_single" type="checkbox">
+                            <span>Отменен</span></label>                         
+                    </div>
+                </div>
+            </div>
+            <div class="dropdowns_container">
+                <div class="action-go-page">
+                    <label for="go-page">Номер страницы</label>
+                    <input name="go-page" type="text" placeholder="Введите номер">
+                </div>
+                <div class="action-delete">
+                    <p>Удалить n записей?</p>
+                    <button class="action-delete_button-del">Удалить</button>
+                    <button class="action-delete_button-reset">Отмена</button>
+                </div>
+                <div class="switcher">
+                    <p>Выберите тему</p>
+                    <button class="switcher_button-day">Светлая</button>
+                    <button class="switcher_button-night">Темная</button>
+                </div>
+            </div>
+        </div>
+        <div class="pageheader">
+            <div class="switcherShow">
+                <p class="switcherShow_p">Список заказов</p>
+                <div class="button button_transparent button_sizing-big button_icon button_icon-blue switcherShow_button">
+                    <button>Светлая тема</button>  
+                </div>
+            </div>
+            <div class="switcherShow">
+                <p class="switcherShow_p">Список заказов</p>
+                <div class="button button_transparent button_sizing-big button_icon button_icon-blue switcherShow_button">
+                    <button>Светлая тема</button>  
+                </div>
+                <div class="switcher switcherShow-yes">
+                    <p>Выберите тему</p>
+                    <button class="switcher_button-day">Светлая</button>
+                    <button class="switcher_button-night">Темная</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
