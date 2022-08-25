@@ -12,6 +12,7 @@
 
 .checkbox label{
     box-sizing: border-box;
+    position: relative;
 }
 
 .checkbox__input{
@@ -32,15 +33,10 @@
     border:none;
 }
 
-.checkbox__input + .checkbox_icon {
+.checkbox__input:checked + .checkbox_icon {
     opacity: 1;
 }
 
-.checkbox__div{
-    position: relative;
-    width: 1rem;
-    height: 1rem;
-}
 
 .checkbox_icon{
     opacity: 0;

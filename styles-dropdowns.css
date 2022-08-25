@@ -13,6 +13,10 @@
     border-radius: 0.5rem;
     padding-top: 0.5rem;
 }
+.dropdown span{
+transition: color 0.2s ease-in;
+}
+
 .dropdown__item-multiply{
     display: flex;
     flex-grow: 1;
@@ -32,13 +36,23 @@
 
 }
 
-.dropdown__item-multiply-checked span{
+.dropdown__item-multiply svg{
+    left: 1rem;
+    top: 0.5rem;
+}
+
+.checkbox input:checked ~ span{
     color: var(--color-blue);
 }
 
-.dropdown__item-withoutcheckbox div{
+.dropdown__item-withoutcheckbox input{
     display: none;
 }
+
+.dropdown__item-withoutcheckbox svg{
+    display: none;
+}
+
 
 .action-go-page{
     width: 10rem;
