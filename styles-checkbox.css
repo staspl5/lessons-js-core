@@ -12,10 +12,9 @@
 
 .checkbox label{
     box-sizing: border-box;
-    position: relative;
 }
 
-.checkbox_input{
+.checkbox__input{
     box-sizing: border-box;
     appearance: none;
     width: 1rem;
@@ -24,17 +23,23 @@
     border: 0.0625rem solid var(--color-day-light-blue);
     border-radius: 0.125rem;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0rem;
     
 }
 
-.checkbox_input:checked{
-    background-color: var(--color-day-light-blue);
+.checkbox__input:checked{
+    background-color: var(--color-blue);
     border:none;
 }
 
-.checkbox_input:checked + .checkbox_icon {
+.checkbox__input + .checkbox_icon {
     opacity: 1;
+}
+
+.checkbox__div{
+    position: relative;
+    width: 1rem;
+    height: 1rem;
 }
 
 .checkbox_icon{
@@ -44,6 +49,6 @@
     width: 1rem;
     position: absolute;
     left: 0rem;
-    top: -0.1rem;
+    top: 0rem;
     transition: opacity 0.25s ease-in;
 }
