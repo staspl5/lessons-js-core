@@ -19,7 +19,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="switcherShow">
                 <p class="switcherShow__text">Список заказов</p>
                 <button class="switcherShow__button button button_size_big button_color_secondary">
@@ -68,7 +68,7 @@
                 </button> 
             </div>
             <div class="panel__filter">
-                <div class="input_block input-block-border-blue">
+                <div class="input_block input_block_color_blue">
                     <label class="input_block__label" for="input1">Дата оформления</label>
                     <div class="input input_incorrect">
                         <span>с</span>
@@ -80,14 +80,14 @@
                         </button>
                     </div>    
                 </div>
-                <div class="input_block input-block-border-blue panel__filter-style">
+                <div class="input_block input_block_color_blue input_block_style">
                     <label class="input_block__label" for="input2">Дата и время заказа</label>
                     <div class="input input_empty">
                         <span>по</span>
                         <input class="input__box" id="input2" type="text" placeholder="dd.mm.yyyy">
                     </div>
                 </div>
-                <div class="input_block panel__filter-wrapper">
+                <div class="input_block input_block_size">
                     <label class="input_block__label" for="input3">Статус заказа</label>
                     <div class=" input input_incorrect">
                         <input class="input__box" id="input3" type="text" value="Любой" disabled>
@@ -98,7 +98,7 @@
                         </button>
                     </div>    
                 </div>
-                <div class="input_block input-block-border-blue">
+                <div class="input_block input_block_color_blue">
                     <label class="input_block__label" for="input4">Дата оформления</label>
                     <div class="input input_incorrect">
                         <span>от</span>
@@ -110,7 +110,7 @@
                         </button>
                     </div>    
                 </div>
-                <div class="input_block input-block-border-blue panel__filter-style">
+                <div class="input_block input_block_color_blue input_block_style">
                     <label class="input_block__label" for="input5">Дата и время заказа</label>
                     <div class="input input_empty">
                         <span>до</span>
@@ -123,8 +123,8 @@
             </div>
         </div>
         <div class="table">
-            <div class="tableHeader">
-                <div class="checkbox tableHeader_check">
+            <div class="table__header">
+                <div class="checkbox table__check">
                     <label class="checkbox__label">
                         <div class="checkbox__div">
                         <input class="checkbox__input" type="checkbox">
@@ -134,40 +134,40 @@
                         </div> 
                     </label>
                 </div>
-                <div class="tableHeader_nomer">
-                    <span>#</span>
+                <div class="table__number">
+                    <span class="table__text">#</span>
                 </div>
-                <div class="tableHeader_item tableHeader-checked">
-                    <span>Дата</span>
-                        <svg class="tableHeader_item-icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="table__item">
+                    <span class="table__text">Дата</span>
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none"/>
                         </svg>
                 </div>
-                <div class="tableHeader_item">
-                    <span>Статус</span>
-                        <svg class="tableHeader_item-icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="table__item">
+                    <span class="table__text">Статус</span>
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none"/>
                         </svg>
                 </div>
-                <div class="tableHeader_item tableHeader_item-positions">
-                    <span>Позиций</span>
-                        <svg class="tableHeader_item-icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="table__item table__item_positions">
+                    <span class="table__text">Позиций</span>
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none"/>
                         </svg>
                 </div>
-                <div class="tableHeader_item tableHeader_item-summ">
-                    <span>Сумма</span>
-                        <svg class="tableHeader_item-icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="table__item table__item_summ">
+                    <span class="table__text">Сумма</span>
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none"/>
                         </svg>
                 </div>
-                <div class="tableHeader_item tableHeader_name">
-                    <span>ФИО Покупателя</span>
+                <div class="table__item table__item_name">
+                    <span class="table__text">ФИО Покупателя</span>
                 </div>
             </div>
-            <div class="tableBody">
-                <div class="tableBody_row">
-                    <div class="tableBody_check">
+            <div class="table__body">
+                <div class="table__row">
+                    <div class="table__check">
                         <div class="checkbox">
                             <label class="checkbox__label">
                                 <div class="checkbox__div">
@@ -179,31 +179,30 @@
                             </label>
                         </div>
                     </div>
-                    <div class="tableBody_item tableBody_item-nomer">
+                    <div class="table__item table__number">
                         <span>1270989</span>
                     </div>
-                    <div class="tableBody_item">
+                    <div class="table__item">
                         <span>15.02.2021, 18:00</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-status">
-                        <svg viewBox="0 0 16 16" fill="#FF8C56" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="table__item table__status">
+                        <svg class="table__icon" class="table__icon" viewBox="0 0 16 16" fill="#FF8C56" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="8" cy="8" r="4" stroke="none"/>
                             </svg>
                         <span>Новый</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-positions">
+                    <div class="table__item table__item_positions">
                         <span>6</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-summ">
+                    <div class="table__item table__item_summ">
                         <span>101 907 ₽</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-name">
+                    <div class="table__item table__item_name">
                         <span>Чернышев Филипп Семенович</span>
                     </div>
                 </div>
-                <div class="tableBody-border"></div>
-                <div class="tableBody_row">
-                    <div class="tableBody_check">
+                <div class="table__row">
+                    <div class="table__check">
                         <div class="checkbox">
                             <label class="checkbox__label">
                                 <div class="checkbox__div">
@@ -215,31 +214,30 @@
                             </label>
                         </div>
                     </div>
-                    <div class="tableBody_item tableBody_item-nomer">
+                    <div class="table__item table__number">
                         <span>235374</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-data">
+                    <div class="table__item table__data">
                         <span>12.03.2021, 05:15</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-status">
-                        <svg viewBox="0 0 16 16" fill="#FF8C56" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="table__item table__status">
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="#FF8C56" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="8" cy="8" r="4" stroke="none"/>
                             </svg>
                         <span>Новый</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-positions">
+                    <div class="table__item table__item_positions">
                         <span>2</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-summ">
+                    <div class="table__item table__item_summ">
                         <span>98 003 ₽</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-name">
+                    <div class="table__item table__item_name">
                         <span>Филиппов Степан Васильевич</span>
                     </div>
                 </div>
-                <div class="tableBody-border"></div>
-                <div class="tableBody_row">
-                    <div class="tableBody_check">
+                <div class="table__row">
+                    <div class="table__check">
                         <div class="checkbox">
                             <label class="checkbox__label">
                                 <div class="checkbox__div">
@@ -251,31 +249,30 @@
                             </label>
                         </div>
                     </div>
-                    <div class="tableBody_item tableBody_item-nomer">
+                    <div class="table__item table__number">
                         <span>1103397</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-data">
+                    <div class="table__item table__data">
                         <span>03.02.2021, 08:04</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-status tableBody_item-status-calculation">
-                        <svg viewBox="0 0 16 16" fill="#459DF5" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="table__item table__item_status tableBody_item-status-calculation">
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="#459DF5" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="8" cy="8" r="4" stroke="none"/>
                             </svg>
                         <span>Рассчет</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-positions">
+                    <div class="table__item table__item_positions">
                         <span>5</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-summ">
+                    <div class="table__item table__item_summ">
                         <span>3 800 ₽</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-name">
+                    <div class="table__item table__item_name">
                         <span>Тихонова Алина Давидовна</span>
                     </div>
                 </div>
-                <div class="tableBody-border"></div>
-                <div class="tableBody_row">
-                    <div class="tableBody_check">
+                <div class="table__row">
+                    <div class="table__check">
                         <div class="checkbox">
                             <label class="checkbox__label">
                                 <div class="checkbox__div">
@@ -287,31 +284,30 @@
                             </label>
                         </div>
                     </div>
-                    <div class="tableBody_item tableBody_item-nomer">
+                    <div class="table__item table__number">
                         <span>6924662</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-data">
+                    <div class="table__item table__data">
                         <span>21.01.2021, 18:00</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-status tableBody_item-status-done">
-                        <svg viewBox="0 0 16 16" fill="#0FB864" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="table__item table__item_status tableBody_item-status-done">
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="#0FB864" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                             </svg>
                         <span>Выполнен</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-positions">
+                    <div class="table__item table__item_positions">
                         <span>1</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-summ">
+                    <div class="table__item table__item_summ">
                         <span>5 700 ₽</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-name">
+                    <div class="table__item table__item_name">
                         <span>Александровна Юлия Никитична</span>
                     </div>
                 </div>
-                <div class="tableBody-border"></div>
-                <div class="tableBody_row">
-                    <div class="tableBody_check">
+                <div class="table__row">
+                    <div class="table__check">
                         <div class="checkbox">
                             <label class="checkbox__label">
                                 <div class="checkbox__div">
@@ -323,32 +319,31 @@
                             </label>
                         </div>
                     </div>
-                    <div class="tableBody_item tableBody_item-nomer">
+                    <div class="table__item table__number">
                         <span>2200086</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-data">
+                    <div class="table__item table__data">
                         <span>19.01.2021, 10:28</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-status tableBody_item-status-cancelled">
-                        <svg viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
+                    <div class="table__item table__item_status tableBody_item-status-cancelled">
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.5 12.5L3.5 3.5" fill="none"/>
                             <circle cx="8" cy="8" r="6.5" fill="none"/>
                             </svg>
                         <span>Отменен</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-positions">
+                    <div class="table__item table__item_positions">
                         <span>-</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-summ">
+                    <div class="table__item table__item_summ">
                         <span>-</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-name">
+                    <div class="table__item table__item_name">
                         <span>Андрей</span>
                     </div>
                 </div>
-                <div class="tableBody-border"></div>
-                <div class="tableBody_row">
-                    <div class="tableBody_check">
+                <div class="table__row">
+                    <div class="table__check">
                         <div class="checkbox">
                             <label class="checkbox__label">
                                 <div class="checkbox__div">
@@ -360,31 +355,30 @@
                             </label>
                         </div>
                     </div>
-                    <div class="tableBody_item tableBody_item-nomer">
+                    <div class="table__item table__number">
                         <span>2842064</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-data">
+                    <div class="table__item table__data">
                         <span>04.01.2021, 12:12</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-status tableBody_item-status-postponed">
-                        <svg viewBox="0 0 16 16" fill="#FF8C56" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="table__item table__item_status tableBody_item-status-postponed">
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="#FF8C56" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="8" cy="8" r="4" stroke="none"/>
                             </svg>
                         <span>Отложен</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-positions">
+                    <div class="table__item table__item_positions">
                         <span>1</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-summ">
+                    <div class="table__item table__item_summ">
                         <span>20 500 ₽</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-name">
+                    <div class="table__item table__item_name">
                         <span>Судакова Анастасия Ильинична</span>
                     </div>
                 </div>
-                <div class="tableBody-border"></div>
-                <div class="tableBody_row">
-                    <div class="tableBody_check">
+                <div class="table__row">
+                    <div class="table__check">
                         <div class="checkbox">
                             <label class="checkbox__label">
                                 <div class="checkbox__div">
@@ -396,31 +390,30 @@
                             </label>
                         </div>
                     </div>
-                    <div class="tableBody_item tableBody_item-nomer">
+                    <div class="table__item table__number">
                         <span>1730071</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-data">
+                    <div class="table__item table__data">
                         <span>17.12.2020, 22:45</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-status tableBody_item-status-done">
-                        <svg viewBox="0 0 16 16" fill="#0FB864" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="table__item table__item_status tableBody_item-status-done">
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="#0FB864" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                             </svg>
                         <span>Выполнен</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-positions">
+                    <div class="table__item table__item_positions">
                         <span>1</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-summ">
+                    <div class="table__item table__item_summ">
                         <span>1 399 ₽</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-name">
+                    <div class="table__item table__item_name">
                         <span>Зверева Арина Николаевна</span>
                     </div>
                 </div>
-                <div class="tableBody-border"></div>
-                <div class="tableBody_row">
-                    <div class="tableBody_check">
+                <div class="table__row">
+                    <div class="table__check">
                         <div class="checkbox">
                             <label class="checkbox__label">
                                 <div class="checkbox__div">
@@ -432,31 +425,30 @@
                             </label>
                         </div>
                     </div>
-                    <div class="tableBody_item tableBody_item-nomer">
+                    <div class="table__item table__number">
                         <span>7987376</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-data">
+                    <div class="table__item tableBody__data">
                         <span>07.12.2020, 08:57</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-status tableBody_item-status-done">
-                        <svg viewBox="0 0 16 16" fill="#0FB864" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="table__item table__item_status tableBody_item-status-done">
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="#0FB864" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                             </svg>
                         <span>Выполнен</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-positions">
+                    <div class="table__item table__item_positions">
                         <span>3</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-summ">
+                    <div class="table__item table__item_summ">
                         <span>117 810 ₽</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-name">
+                    <div class="table__item table__item_name">
                         <span>Карташов Максим Кириллович </span>
                     </div>
                 </div>
-                <div class="tableBody-border"></div>
-                <div class="tableBody_row">
-                    <div class="tableBody_check">
+                <div class="table__row">
+                    <div class="table__check">
                         <div class="checkbox">
                             <label class="checkbox__label">
                                 <div class="checkbox__div">
@@ -468,31 +460,30 @@
                             </label>
                         </div>
                     </div>
-                    <div class="tableBody_item tableBody_item-nomer">
+                    <div class="table__item table__number">
                         <span>1373265</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-data">
+                    <div class="table__item tableBody__data">
                         <span>15.11.2020, 14:26</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-status">
-                        <svg viewBox="0 0 16 16" fill="#FF8C56" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="table__item table__item_status">
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="#FF8C56" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="8" cy="8" r="4" stroke="none"/>
                             </svg>
                         <span>Новый</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-positions">
+                    <div class="table__item table__item_positions">
                         <span>1</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-summ">
+                    <div class="table__item table__item_summ">
                         <span>17 008 ₽</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-name">
+                    <div class="table__item table__item_name">
                         <span>Васильев Вадим Данилович</span>
                     </div>
                 </div>
-                <div class="tableBody-border"></div>
-                <div class="tableBody_row">
-                    <div class="tableBody_check">
+                <div class="table__row">
+                    <div class="table__check">
                         <div class="checkbox">
                             <label class="checkbox__label">
                                 <div class="checkbox__div">
@@ -504,31 +495,29 @@
                             </label>
                         </div>
                     </div>
-                    <div class="tableBody_item tableBody_item-nomer">
+                    <div class="table__item table__number">
                         <span>1311100</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-data">
+                    <div class="table__item table__data">
                         <span>07.11.2020, 18:52</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-status tableBody_item-status-cancelled">
-                        <svg viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
+                    <div class="table__item table__item_status tableBody_item-status-cancelled">
+                        <svg class="table__icon" viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.5 12.5L3.5 3.5" fill="none"/>
                             <circle cx="8" cy="8" r="6.5" fill="none"/>
                             </svg>
                         <span>Отменен</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-positions">
+                    <div class="table__item table__item_positions">
                         <span>-</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-summ">
+                    <div class="table__item table__item_summ">
                         <span>-</span>
                     </div>
-                    <div class="tableBody_item tableBody_item-name">
+                    <div class="table__item table__item_name">
                         <span>София</span>
                     </div>
-                </div>
-                <div class="tableBody-border"></div>
-                
+                </div>              
             </div>
             <div class="tableFooter">
                 <div class="tableFooter_buttons">

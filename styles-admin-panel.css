@@ -10,9 +10,6 @@
     --color-day-light-blue: #EBF0F5;
 }
 
-
-
-
 body{
     box-sizing: border-box;
     background-color: var(--background-color-white);
@@ -27,7 +24,7 @@ body{
     height: 100%;
 }
 
-header{
+.header{
     box-sizing: border-box;
     margin-bottom: 2rem;
 }
@@ -46,43 +43,41 @@ header{
 
 }
 
-
-.panel__left-input{
+.panel__left .searcbar{
     flex-grow: 1; 
 }
 
-.input-block-border-blue{
+.input_block_color_blue{
     margin-right: 0.25rem;
 }
-.input-block-border-blue div{
+.input_block_color_blue .input{
     border-color: var(--color-blue);
     width: 8.875rem;
 
 }
 
-
-.panel__filter-style{
+.input_block_style{
     margin-right: 1rem;
 }
 
-.panel__filter-wrapper{
+.input_block_size{
     width: 12rem;
     margin-right: 1rem;
 }
-.panel__filter-wrapper svg{
+.input_block_size svg{
     width: 1rem;
     height: 1rem;
 }
 
-.panel__filter-wrapper button{
+.input_block_size button{
     display: flex;
     align-items: center;
 }
-.panel__filter-wrapper div{
+.input_block_size div{
     border-color: var(--color-blue);
 }
 
-.panel__filter-wrapper input{
+.input_block_size input{
     color: var(--color-black);
 }
 
@@ -95,11 +90,10 @@ header{
     overflow: hidden;
     flex-grow: 1;
     margin-bottom: 2rem;
-
 }
 
 
-.tableHeader{
+.table__header{
     display: flex;
     align-items: center;
     background-color: var(--background-table-header);
@@ -108,73 +102,80 @@ header{
     padding-right: 0.5rem;
 }
 
-.tableHeader_check{
+.table__header .table__check{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--background-table-header);
     width: 2rem;
+    height: 2.5rem;
 }
 
-.tableHeader_nomer{
+.table__header .table__number{
     display: flex;
     align-items: center;
-    width: 6.75rem;
+    width: 6.7rem;
+    height:2.5rem;
     padding-left: 0.5rem;
     background-color: var(--background-table-header);
 }
 
-.tableHeader_item-icon{
+.table__header .table__icon{
     fill: var(--background-color-white);
     height: 1rem;
     width: 1rem;
 }
 
-.tableHeader_nomer span{
+.table__number .table__text{
     color: var(--background-color-white);
 }
 
-.tableHeader_item{
+.table__header .table__item{
     background-color: var(--background-table-header);
     display: flex;
     align-items: center;
-    width: 17%;
+    width: 20%;
     padding-left: 0.5rem;
     height: 2.5rem;
     gap:0.25rem;
 }
 
-.tableHeader_item span{
+.table__item .table__text{
     color: var(--background-color-white);
 }
 
-
-
-.tableHeader-checked{
-    background-color: var(--background-color-day-shade);
+.table__header .table__check:hover{
+    background-color: var(--background-color-day-shade); 
 }
 
-.tableHeader_item-positions{
-    width: 10%;
+.table__header .table__number:hover{
+    background-color: var(--background-color-day-shade); 
 }
 
-.tableHeader_item-summ{
-    width: 13%;
+.table__header .table__item:hover{
+    background-color: var(--background-color-day-shade); 
 }
 
-.tableHeader_name{
-    width: 25%;
+.table__header .table__item_positions{
+    width: 15%;
 }
 
-.tableHeader_name span{
+.table__header .table__item_summ{
+    width: 15%;
+}
+
+.table__header .table__item_name{
+    width: 35%;
+}
+
+.table__item_name .table__text{
     color: var(--background-color-white);
 }
 .table{
     height: calc(100vh - 352px);
     min-height: 5rem;
-
 }
-.tableBody{
+.table__body{
     /*height: 27.5rem;*/
     height:100%; 
     overflow-y: auto;
@@ -182,50 +183,53 @@ header{
     
 }
 
-.tableBody_row{
+.table__row{
     display: flex;
     align-items: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    border-bottom: 0.08rem solid var(--color-day-light-blue);
 }
 
-.tableBody_check{
+.table__body .table__check{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 2rem;  
 }
 
-.tableBody_item{
+.table__body .table__item{
     background-color: var(--background-color-white);
     display: flex;
     align-items: center;
-    width: 17%;
+    width: 20%;
     padding-left: 0.5rem;
     height: 2.5rem;
     gap: 0.25rem;
 }
 
-.tableBody_item-nomer{
+.table__body .table__number{
     width: 6.7rem;
 }
 
-.tableBody_item-status svg{
+
+.table__body .table__icon{
     height: 1rem;
     width: 1rem;
 }
 
-.tableBody_item-positions{
-    width: 10%;
+.table__body .table__item_positions{
+    width: 15%;
 }
 
-.tableBody_item-summ{
-    width: 13%;
+.table__body .table__item_summ{
+    width: 15%;
 }
 
-.tableBody_item-name{
-    width: 25%;
+.table__body .table__item_name{
+    width: 33%;
 }
+
 
 .tableBody_item-status-done svg{
     opacity: 0.5;
@@ -238,13 +242,6 @@ header{
 
 
 .tableBody_item-status-cancelled{
-    opacity: 0.5;
-}
-
-.tableBody-border{
-    border: 0.0625rem solid var(--color-day-light-blue);
-    background-color: var(--color-day-light-blue);
-    height: 0;
     opacity: 0.5;
 }
 
