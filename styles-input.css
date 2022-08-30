@@ -4,6 +4,15 @@
     --border-color-red: #F53152;
     --background-color-day-light-blue: #BAD8F5;
 }*/
+label{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+}
+
 input{
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
@@ -21,13 +30,13 @@ button{
     box-sizing: border-box;
 }
 
-.input-block{
+.input_block{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.input-block__input{
+.input{
     height: 2rem;
     background: var(--background-color-white);
     border: 1px solid var(--border-color-blue);
@@ -38,30 +47,29 @@ button{
     gap: 0.25rem;
 }
 
-.input-block__input-empty{
+.input_empty{
     padding-right: 0.25rem;
 }
 
-.input-block__input input{
+.input__box{
     background: var(--background-color-white);
     outline: none;
     appearance: none;
     flex-grow: 1;
     overflow: hidden;
     border: none;
-    height: 1rem;
     flex-grow: 1;
 }
 
-.input-block__input input::placeholder{
+.input__box::placeholder{
     color: var(--color-day-light-blue);
 }
 
-.input-block__input-incorrect{
+.input_incorrect{
     border: 0.0625rem solid var(--border-color-red);
 }
 
-.input-block__button{
+.input__button{
     appearance: none;
     width: 1.5rem;
     height: 1.5rem;
@@ -70,29 +78,29 @@ button{
     background-color: var(--background-color-white);
 }
 
-.input-block__button svg{
+.input_incorrect .input__icon{
     width: 0.5625rem;
     height: 0.5625rem;
     stroke: var(--color-day-light-blue);
     fill: var(--color-day-light-blue);
 }
 
-.input-block__input-disabled{
+.input_disabled{
     background: var(--color-day-light-blue);
     padding-right: 0.2rem;
 }
 
-.input-block__input-disabled input{
+.input_disabled .input__box{
     background: var(--color-day-light-blue);
     color: black;
 }
 
-.input-block__button-disabled{
+.input_disabled .input__button{
     padding: 0.25rem;
     background-color: var(--color-day-light-blue);
 }
 
-.input-block__button-disabled svg{
+.input_disabled .input__icon{
     height: 1rem;
     width: 1rem;
 }

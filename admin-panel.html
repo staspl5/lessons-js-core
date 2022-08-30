@@ -21,9 +21,9 @@
     <body>
         <header>
             <div class="switcherShow">
-                <p class="switcherShow_p">Список заказов</p>
-                <button class="switcherShow__button button button-big button-secondary button-text">
-                    <svg class="button__icon button__icon-blue" viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
+                <p class="switcherShow__text">Список заказов</p>
+                <button class="switcherShow__button button button_size_big button_color_secondary">
+                    <svg class="button__icon" viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="8" cy="8" r="4" stroke="none"/>
                         <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
                         <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none"/>
@@ -34,102 +34,101 @@
                         <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none"/>
                         <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
                         </svg>
-                    <span>Светлая тема</span>
+                    <span class="button__text">Светлая тема</span>
                 </button> 
             </div>
         </header>
         <div class="panel">
             <div class="panel__upper">
                 <div class="panel__left">
-                    <div class="searchbar__input searchbar__input_empty panel__left-input">
+                    <div class="searchbar searchbar_empty panel__left-input">
                         <svg class="searchbar__svg" viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5" fill="none"/>
                             </svg>
-                        <input name="text" type="text" placeholder="Номер заказа или ФИО">
+                        <input class="searchbar__input" name="text" type="text" placeholder="Номер заказа или ФИО">
                     </div>
-                    <button class="button button-big button-primary button-text">
-                        <svg class="button__icon button__icon-white" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <button class="button button_size_big button_color_primary">
+                        <svg class="button__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 4H4V5.5L7 8.5V12L9 13V8.5L12 5.5V4Z" stroke="none"/>
                             </svg>
-                        <span>Фильтры</span>
+                        <span class="button__text">Фильтры</span>
                     </button> 
-                    <button class="button button-big button-secondary button-text">
-                        <span>Сбросить фильтры</span>
+                    <button class="button button_size_big button_color_secondary">
+                        <span class="button__text">Сбросить фильтры</span>
                     </button> 
                 </div>
-                <button class="button button-big button-secondary button-text">
+                <button class="button button_size_big button_color_secondary">
                     <svg class="button__icon button__icon-blue" viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.50251 7.5V8.5C2.50251 10.75 4.75251 13.5 8.00251 13.5C10 13.5 11.6187 12.5 12.6 11" fill="none"/>
                         <path d="M13.5 8.5V7.5C13.5 5.25 11.25 2.5 7.99997 2.5C6 2.5 4.38135 3.5 3.4 5" fill="none"/>
                         <path d="M4.5 9.5L2.50254 7.5L0.752533 9.75" fill="none"/>
                         <path d="M11.5 6.5L13.5 8.5L15.25 6.25" fill="none"/>
                         </svg>
-                    <span>Загрузка</span>
+                    <span class="button__text">Загрузка</span>
                 </button> 
             </div>
             <div class="panel__filter">
-                <div class="input-block input-block-border-blue">
-                    <label for="input1">Дата оформления</label>
-                    <div class="input-block__input input-block__input-incorrect">
+                <div class="input_block input-block-border-blue">
+                    <label class="input_block__label" for="input1">Дата оформления</label>
+                    <div class="input input_incorrect">
                         <span>с</span>
-                        <input id="input1" type="text" value="20.01.2021" placeholder="dd.mm.yyyy">
-                        <button class="input-block__button">
-                            <svg viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
+                        <input class="input__box" id="input1" type="text" value="20.01.2021" placeholder="dd.mm.yyyy">
+                        <button class="input__button">
+                            <svg class="input__icon" viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 15L15 1M1 1L15 15" fill="none"/>
                                 </svg>
                         </button>
                     </div>    
                 </div>
-                <div class="input-block input-block-border-blue panel__filter-style">
-                    <label for="text1"></label>
-                    <div class="input-block__input input-block__input-empty">
+                <div class="input_block input-block-border-blue panel__filter-style">
+                    <label class="input_block__label" for="input2">Дата и время заказа</label>
+                    <div class="input input_empty">
                         <span>по</span>
-                        <input id="text1" type="text" placeholder="dd.mm.yyyy">
+                        <input class="input__box" id="input2" type="text" placeholder="dd.mm.yyyy">
                     </div>
                 </div>
-                <div class="input-block panel__filter-wrapper">
-                    <label for="text2">Статус заказа</label>
-                    <div class="input-block__input input-block__input-incorrect">
-                        <input id="text2" type="text" value="Любой" disabled>
-                        <button class="input-block__button">
-                            <svg viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="input_block panel__filter-wrapper">
+                    <label class="input_block__label" for="input3">Статус заказа</label>
+                    <div class=" input input_incorrect">
+                        <input class="input__box" id="input3" type="text" value="Любой" disabled>
+                        <button class="input__button">
+                            <svg class="input__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none"/>
                                 </svg>
                         </button>
                     </div>    
                 </div>
-
-                <div class="input-block input-block-border-blue">
-                    <label for="input1">Сумма заказа</label>
-                    <div class="input-block__input input-block__input-incorrect">
+                <div class="input_block input-block-border-blue">
+                    <label class="input_block__label" for="input4">Дата оформления</label>
+                    <div class="input input_incorrect">
                         <span>от</span>
-                        <input id="input1" type="text" value="5000" placeholder="₽">
-                        <button class="input-block__button">
-                            <svg viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
+                        <input class="input__box" id="input4" type="text" value="5000" placeholder="₽">
+                        <button class="input__button">
+                            <svg class="input__icon" viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 15L15 1M1 1L15 15" fill="none"/>
                                 </svg>
                         </button>
                     </div>    
                 </div>
-                <div class="input-block input-block-border-blue panel__filter-style">
-                    <label for="text1"></label>
-                    <div class="input-block__input input-block__input-empty">
+                <div class="input_block input-block-border-blue panel__filter-style">
+                    <label class="input_block__label" for="input5">Дата и время заказа</label>
+                    <div class="input input_empty">
                         <span>до</span>
-                        <input id="text1" type="text" placeholder="₽">
+                        <input class="input__box" id="input5" type="text" placeholder="₽">
                     </div>
                 </div>
-                <button class="button button-big button-secondary button-text">
-                    <span>Применить</span>
+                <button class="button button_size_big button_color_secondary">
+                    <span class="button__text">Применить</span>
                 </button>  
             </div>
         </div>
         <div class="table">
             <div class="tableHeader">
                 <div class="checkbox tableHeader_check">
-                    <label>
+                    <label class="checkbox__label">
                         <div class="checkbox__div">
                         <input class="checkbox__input" type="checkbox">
-                        <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="checkbox__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                             </svg>
                         </div> 
@@ -170,10 +169,10 @@
                 <div class="tableBody_row">
                     <div class="tableBody_check">
                         <div class="checkbox">
-                            <label>
+                            <label class="checkbox__label">
                                 <div class="checkbox__div">
                                 <input class="checkbox__input" type="checkbox">
-                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="checkbox__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                                     </svg>
                                 </div> 
@@ -206,10 +205,10 @@
                 <div class="tableBody_row">
                     <div class="tableBody_check">
                         <div class="checkbox">
-                            <label>
+                            <label class="checkbox__label">
                                 <div class="checkbox__div">
                                 <input class="checkbox__input" type="checkbox">
-                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="checkbox__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                                     </svg>
                                 </div> 
@@ -242,10 +241,10 @@
                 <div class="tableBody_row">
                     <div class="tableBody_check">
                         <div class="checkbox">
-                            <label>
+                            <label class="checkbox__label">
                                 <div class="checkbox__div">
                                 <input class="checkbox__input" type="checkbox">
-                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="checkbox__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                                     </svg>
                                 </div> 
@@ -278,10 +277,10 @@
                 <div class="tableBody_row">
                     <div class="tableBody_check">
                         <div class="checkbox">
-                            <label>
+                            <label class="checkbox__label">
                                 <div class="checkbox__div">
                                 <input class="checkbox__input" type="checkbox">
-                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="checkbox__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                                     </svg>
                                 </div> 
@@ -314,10 +313,10 @@
                 <div class="tableBody_row">
                     <div class="tableBody_check">
                         <div class="checkbox">
-                            <label>
+                            <label class="checkbox__label">
                                 <div class="checkbox__div">
                                 <input class="checkbox__input" type="checkbox">
-                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="checkbox__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                                     </svg>
                                 </div> 
@@ -351,10 +350,10 @@
                 <div class="tableBody_row">
                     <div class="tableBody_check">
                         <div class="checkbox">
-                            <label>
+                            <label class="checkbox__label">
                                 <div class="checkbox__div">
                                 <input class="checkbox__input" type="checkbox">
-                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="checkbox__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                                     </svg>
                                 </div> 
@@ -387,10 +386,10 @@
                 <div class="tableBody_row">
                     <div class="tableBody_check">
                         <div class="checkbox">
-                            <label>
+                            <label class="checkbox__label">
                                 <div class="checkbox__div">
                                 <input class="checkbox__input" type="checkbox">
-                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="checkbox__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                                     </svg>
                                 </div> 
@@ -423,10 +422,10 @@
                 <div class="tableBody_row">
                     <div class="tableBody_check">
                         <div class="checkbox">
-                            <label>
+                            <label class="checkbox__label">
                                 <div class="checkbox__div">
                                 <input class="checkbox__input" type="checkbox">
-                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="checkbox__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                                     </svg>
                                 </div> 
@@ -459,10 +458,10 @@
                 <div class="tableBody_row">
                     <div class="tableBody_check">
                         <div class="checkbox">
-                            <label>
+                            <label class="checkbox__label">
                                 <div class="checkbox__div">
                                 <input class="checkbox__input" type="checkbox">
-                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="checkbox__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                                     </svg>
                                 </div> 
@@ -495,10 +494,10 @@
                 <div class="tableBody_row">
                     <div class="tableBody_check">
                         <div class="checkbox">
-                            <label>
+                            <label class="checkbox__label">
                                 <div class="checkbox__div">
                                 <input class="checkbox__input" type="checkbox">
-                                <svg class="checkbox_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="checkbox__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
                                     </svg>
                                 </div> 
@@ -534,41 +533,51 @@
             <div class="tableFooter">
                 <div class="tableFooter_buttons">
                     <span class="tableFooter__span">Выбрано записей: 5</span>
-                    <button class="button button-small button-primary">
-                        <svg class="button__icon button__icon-white" viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
+                    <button class="button button_size_small button_color_primary">
+                        <svg class="button__icon" viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 14.5H15" fill="none"/>
                             <path d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4" fill="none"/>
                             </svg>
-                        <span>Изменить статус</span>
+                        <span class="button__text">Изменить статус</span>
                     </button> 
-                    <button class="button button-small button-primary button-color-red">
-                        <svg class="button__icon button__icon-white" viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
+                    <button class="button button_size_small button_color_primary button-color-red">
+                        <svg class="button__icon" viewBox="0 0 16 16" fill="none" stroke="#8055FF" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5" fill="none" stroke-linecap="round"/>
                             <path d="M6.5 6V12M9.5 6V12" fill="none" stroke-linecap="round"/>
                             </svg>
-                        <span>Удалить</span>
+                        <span class="button__text">Удалить</span>
                     </button> 
                 </div>
                 <div class="tableFooter_pages">
-                    <button class="button button-small button-primary button-text">
-                        <span>
+                    <button class="button button_size_small button_color_primary">
+                        <span class="button__text">
                         1
                         </span>
                     </button>
-                    <button class="button button-small button-secondary">
-                        <span>2</span>
+                    <button class="button button_size_small button_color_secondary">
+                        <span class="button__text">
+                        2
+                        </span>
                     </button> 
-                    <button class="button button-small button-secondary">
-                        <span>3</span>
+                    <button class="button button_size_small button_color_secondary">
+                        <span class="button__text">
+                        3
+                        </span>
                     </button> 
-                    <button class="button button-small button-secondary">
-                        <span>...</span>
+                    <button class="button button_size_small button_color_secondary">
+                        <span class="button__text">
+                        ...
+                        </span>
                     </button> 
-                    <button class="button button-small button-secondary tableFooter_pages_button">
-                        <span>18</span>
+                    <button class="button button_size_small button_color_secondary">
+                        <span class="button__text">
+                        18
+                        </span>
                     </button> 
-                    <button class="button button-small button-secondary">
-                        <span>#</span>
+                    <button class="button button_size_small button_color_secondary">
+                        <span class="button__text">
+                        #
+                        </span>
                     </button> 
                 </div>
                 

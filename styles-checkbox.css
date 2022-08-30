@@ -10,7 +10,7 @@
 }
 
 
-.checkbox label{
+.checkbox .checkbox__label{
     box-sizing: border-box;
     position: relative;
 }
@@ -33,12 +33,12 @@
     border:none;
 }
 
-.checkbox__input:checked + .checkbox_icon {
+.checkbox__input:checked + .checkbox__icon {
     opacity: 1;
 }
 
 
-.checkbox_icon{
+.checkbox__icon{
     opacity: 0;
     fill: var(--background-color-white);
     height: 1rem;

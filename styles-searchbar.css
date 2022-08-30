@@ -3,7 +3,7 @@
     --border-color-blue:#459DF5;
 }*/
 
-.searchbar__input{
+.searchbar{
     border: 1px solid black;
     height: 2rem;
     display: flex;
@@ -15,16 +15,15 @@
     gap: 0.5rem;
 }
 
-.searchbar__input input{
+.searchbar .searchbar__input{
     background-color: var(--background-color-white);
     border: none;
-    height: 1rem;
     outline: none;
     flex-grow: 1;
     overflow: hidden;
 }
 
-.searchbar__input_empty{
+.searchbar_empty{
     padding-right: 0.25rem;
 }
 
@@ -36,7 +35,7 @@
     stroke: var(--color-blue);
 }
 
-.searchbar__input input::placeholder{
+.searchbar__input::placeholder{
     color: var(--color-day-light-blue);
 }
 
