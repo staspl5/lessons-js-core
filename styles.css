@@ -1,108 +1,106 @@
-:root{
-    --border-color: #8055FF;
-    --background-color: #e2dddd;
+:root {
+  --border-color: #8055ff;
+  --background-color: #e2dddd;
 }
 
-body{
-    background-color: var(--background-color);
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.8125rem;
-    line-height: 1rem;
+body {
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1rem;
 }
 
-.inputs{
-    box-sizing: border-box;
-    width: 22rem;
-    height: 22.5rem;
-    border: 0.0625rem dashed var(--border-color);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-left: 3rem;
-    padding-right: 3rem;
+.inputs {
+  box-sizing: border-box;
+  width: 22rem;
+  height: 22.5rem;
+  border: 0.0625rem dashed var(--border-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-.searchbars{
-    width: 22rem;
-    height: 12rem;
-    border: 1px dashed var(--border-color);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap:2rem;
-    padding: 3rem;
+.searchbars {
+  width: 22rem;
+  height: 12rem;
+  border: 1px dashed var(--border-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
 }
 
-.checkboxs{
-    padding: 1.5rem;
-    width: 6.5rem;
-    height: 4rem;
-    border: 1px dashed var(--border-color);
-    border-radius: 0.3125rem;
-    display: flex;
-    gap: 1.5rem;
+.checkboxs {
+  padding: 1.5rem;
+  width: 6.5rem;
+  height: 4rem;
+  border: 1px dashed var(--border-color);
+  border-radius: 0.3125rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
-.radios{
-    padding: 1.5rem;
-    width: 6.5rem;
-    height: 4rem;
-    border: 1px dashed var(--border-color);
-    border-radius: 0.3125rem;
-    display: flex;
-    gap: 1.5rem;
+.radios {
+  padding: 1.5rem;
+  width: 6.5rem;
+  height: 4rem;
+  border: 1px dashed var(--border-color);
+  border-radius: 0.3125rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
-.buttons{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 576px;
-    height: 376px;
-    border: 1px dashed var(--border-color);
-    border-radius: 5px;
-    padding-left: 3rem;
-    padding-top: 3rem;
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 576px;
+  height: 376px;
+  border: 1px dashed var(--border-color);
+  border-radius: 5px;
+  padding-left: 3rem;
+  padding-top: 3rem;
 }
-.buttons_container{
-    display: flex;  
-    gap: 3rem;
-}
-
-.buttons_subcontainer button{
-    margin-bottom: 1rem;
+.buttons_container {
+  display: flex;
+  gap: 3rem;
 }
 
-.dropdowns__container{
-    display: flex;
-    gap: 3rem;
+.buttons_subcontainer button {
+  margin-bottom: 1rem;
 }
 
-.dropdowns{
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    width: 42rem;
-    height: 32rem;
-    border: 0.0625rem dashed var(--border-color);
-    border-radius: 0.3125rem;
-    padding-left: 3rem;
-    padding-top: 3rem;
+.dropdowns__container {
+  display: flex;
+  gap: 3rem;
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  width: 42rem;
+  height: 32rem;
+  border: 0.0625rem dashed var(--border-color);
+  border-radius: 0.3125rem;
+  padding-left: 3rem;
+  padding-top: 3rem;
 }
 
 .pageheader {
-    width: 49.125rem;
-    height: 13rem;
-    border: 1px dashed var(--border-color);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding: 3rem;
+  width: 49.125rem;
+  height: 13rem;
+  border: 1px dashed var(--border-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
 }
-
-
